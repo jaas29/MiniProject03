@@ -1,22 +1,49 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
   font-weight: 400;
-  color: #1F2933;
-  background-color: #F4F6F8;
-  /* ... */
+  color: #F1F5F9;
+  background-color: #0F172A;
 }
 
-h1 { color: #111827; }
-h2 { color: #111827; }
-p  { color: #4B5563; }
+h1 {
+  color: #F1F5F9;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: #E2E8F0;
+  font-weight: 600;
+}
+
+h3 {
+  color: #CBD5E1;
+  font-weight: 600;
+}
+
+p {
+  color: #94A3B8;
+}
 
 button {
-  background-color: #2563EB;
+  background-color: #10B981;
   color: #ffffff;
   cursor: pointer;
-  /* ... */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
+
 button:hover {
-  background-color: #1D4ED8;
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
 }

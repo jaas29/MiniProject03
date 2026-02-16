@@ -6,15 +6,81 @@
 }
 
 .card {
+  background-color: #1E293B;
   padding: 2em;
   margin: 1em;
-  border-radius: 10px;
+  border-radius: 12px;
+  border: 1px solid #334155;
 }
 
 .summary-box {
-  background-color: #16213e;
-  padding: 15px;
-  border-radius: 10px;
+  background-color: #1E293B;
+  padding: 20px;
+  border-radius: 12px;
   margin: 20px auto;
   max-width: 400px;
+  border: 1px solid #334155;
+}
+
+/* Day selector tabs */
+.day-selector {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.day-btn {
+  background-color: #1E293B;
+  color: #94A3B8;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  border: 1px solid #334155;
+}
+
+.day-btn:hover {
+  background-color: #334155;
+  color: #F1F5F9;
+}
+
+.day-btn-active {
+  background-color: #10B981;
+  color: #ffffff;
+  border-color: #10B981;
+}
+
+.day-btn-active:hover {
+  background-color: #059669;
+}
+
+.day-title {
+  margin: 10px 0 5px 0;
+}
+
+/* Rest day toggle */
+.rest-day-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #94A3B8;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.rest-day-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #10B981;
+}
+
+.rest-day-card {
+  text-align: center;
+}
+
+.rest-day-card h2 {
+  color: #10B981;
 }
