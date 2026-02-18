@@ -18,3 +18,6 @@ Workout Tracker is a React-based web app that lets users plan and manage their w
 - **ExerciseForm** - A controlled form for adding a new exercise or editing an existing one. Uses local state for the input fields and initializes from props when in edit mode.
 - **ExerciseList** - Displays the list of exercises for the selected day using .map(). Also shows a workout summary section with stats calculated using .reduce().
 - **ExerciseItem** - Represents a single exercise entry. Displays the exercise name, sets, reps, and weight, along with Edit and Delete buttons.
+
+## Live URL
+https://workouttrackerminiproject03.netlify.app/
