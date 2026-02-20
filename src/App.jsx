@@ -10,7 +10,9 @@ days.forEach(day => {
   initialWeekData[day] = { exercises: [], isRestDay: false }
 })
 
+
 function App() {
+  // State for selected day, week data, and editing index
   const [selectedDay, setSelectedDay] = useState('Monday')
   const [weekData, setWeekData] = useState(() => {
     const saved = localStorage.getItem('weekData')
@@ -18,6 +20,7 @@ function App() {
   })
   const [editingIndex, setEditingIndex] = useState(null)
 
+  // Save week data to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('weekData', JSON.stringify(weekData))
   }, [weekData])
@@ -25,6 +28,7 @@ function App() {
   const currentDay = weekData[selectedDay]
   const currentExercises = currentDay.exercises
 
+  // Handlers for day selection, rest day toggle, adding/updating/deleting exercises, and editing
   const handleDayClick = (day) => {
     setSelectedDay(day)
     setEditingIndex(null)
@@ -78,6 +82,7 @@ function App() {
     setEditingIndex(null)
   }
 
+  // When edit button is clicked, set the editing index to the exercise being edited
   const handleEditClick = (index) => {
     setEditingIndex(index)
   }
